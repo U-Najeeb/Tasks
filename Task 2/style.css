@@ -1,0 +1,1211 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter:wght@400;700&family=Pacifico&family=Playfair+Display:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@200&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap");
+:root {
+  --grey: #2d2f30;
+  --blue: #33475b;
+  --light-grey: #87898c;
+  --dark-grey: #4f4f4f;
+  --powder-blue: #e7f6ff;
+  --dark-blue: #094b72;
+  --dark-blue-2: #193e6c;
+  --text-black: #363940;
+  --footer-text: #eeeff4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* HEADER SECTION  */
+header {
+  width: 120rem;
+  height: 7rem;
+  margin: 0 auto;
+  padding: 1.2rem;
+  flex-shrink: 0;
+}
+
+.nav_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  height: 100%;
+}
+
+.nav_list {
+  display: inline-flex;
+  list-style: none;
+  /* border: 1px solid blue; */
+  padding: 1.3rem;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+}
+
+.nav__links {
+  text-decoration: none;
+  color: var(--grey);
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  /* font-size: 1.12rem; */
+  font-size: clamp(0.698rem, 2.5vw, 1.12rem);
+  text-transform: uppercase;
+  letter-spacing: 0.112rem;
+}
+
+.search__icon {
+  height: 100%;
+}
+
+/* HERO SECTION */
+.hero__section {
+  display: flex;
+  justify-content: center;
+}
+
+.hero__title {
+  position: relative;
+  top: 15rem;
+  left: 20rem;
+  width: 70rem;
+  height: 100%;
+}
+
+.capsule__long {
+  background: var(--powder-blue);
+  border-radius: 2rem;
+  display: flex;
+  align-items: center;
+  padding: 0.3rem;
+  max-width: max-content;
+  margin-left: 2rem;
+}
+
+.capsule__new {
+  background: var(--dark-blue);
+  color: #fff;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  width: 7rem;
+  height: 2rem;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.1rem;
+}
+
+.capsule__text {
+  margin-left: 0.5rem;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+  color: var(--dark-blue-2);
+  font-size: 1.4rem;
+  line-height: 2rem;
+  padding: 0.2rem 1rem;
+}
+
+.hero__heading {
+  color: var(--dark-blue-2);
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "Playfair Display";
+  font-size: 9rem;
+  /* font-size: clamp(4rem, 2.5vw, 9rem); */
+  font-weight: 700;
+  line-height: 10.8rem;
+  letter-spacing: 0.115rem;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.hero__description {
+  color: var(--dark-grey);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 2.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3.8rem;
+  letter-spacing: 0.05rem;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  margin: 3rem 0;
+}
+
+.btn {
+  padding: 2rem 3rem;
+  border-radius: 1rem;
+  border: none;
+  background: var(--dark-blue);
+  color: #fff;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  letter-spacing: 0.134rem;
+}
+
+.hero__description--two {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 400;
+  font-size: 2.2rem;
+  line-height: 3.1rem;
+  letter-spacing: 0.2rem;
+  margin-top: 8rem;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.hero__image--container {
+  height: 100%;
+  position: relative;
+  right: 5rem;
+}
+
+.hero__image {
+  width: 100%;
+  position: relative;
+  bottom: 133rem;
+  left: 15rem;
+}
+
+.hero__name-card {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 29rem;
+  height: 10rem;
+  bottom: 142rem;
+  left: 27rem;
+  border-radius: 1rem;
+}
+
+.hero__companies {
+  display: grid;
+  grid-template-columns: repeat(2, 15rem);
+  gap: 2rem;
+  margin-top: 2.5rem;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.hero__image--name {
+  color: var(--blue);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.6rem;
+}
+
+.hero__image--designation {
+  color: var(--light-grey);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  line-height: 3.6rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.circles {
+  border-radius: 50%;
+}
+
+.circle--1 {
+  background: rgba(110, 168, 255, 0.1);
+  width: 75rem;
+  height: 75rem;
+}
+
+.circle--2 {
+  background: rgba(110, 168, 255, 0.1);
+  position: relative;
+  bottom: 75rem;
+  left: 7rem;
+  height: 60rem;
+  width: 60rem;
+}
+
+/* WHY SECTION */
+.why__section {
+  background: #f2f7ff;
+  height: 80rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15rem;
+}
+
+.why__heading {
+  font-family: "Playfair Display", serif;
+  /* font-size: 4rem; */
+  font-size: clamp(2.5rem, 2.5vw, 4rem);
+  font-weight: 700;
+  letter-spacing: 0.0123rem;
+}
+
+.why_description {
+  color: var(--light-grey);
+  font-family: "Poppins", sans-serif;
+  /* font-size: 1.80rem; */
+  font-size: clamp(1.7rem, 2.5vw, 2rem);
+  font-weight: 400;
+  line-height: 3rem;
+  letter-spacing: 0.025rem;
+  margin-top: 2rem;
+}
+
+.why__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+}
+
+.why__card {
+  width: 22rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.223));
+}
+
+.why__card img {
+  margin-bottom: 1rem;
+}
+
+.card__heading {
+  color: var(--text-black);
+  font-family: "Playfair Display", serif;
+  /* font-size: 2rem; */
+  font-size: clamp(1.45rem, 2.5vw, 2.2rem);
+  font-weight: 700;
+  line-height: 2.5rem;
+  letter-spacing: 0.0325rem;
+}
+
+.card__description {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin: 1rem 0;
+  /* font-size: 1.2rem; */
+  font-size: clamp(1.11rem, 2.5vw, 1.4rem);
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: 0.0125rem;
+}
+
+/* ACHIEVEMENTS SECTION */
+.achievements__section {
+  background-image: url("./assests/BG.png");
+  height: 28rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.achievement__title {
+  color: #fff;
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  font-size: 4.5rem;
+  /* font-size: clamp(2.4rem, 2.5vw, 4.5rem); */
+  font-weight: 900;
+  line-height: 4rem;
+  letter-spacing: 0.15rem;
+}
+
+.achievement__subtitle {
+  color: #fff;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 1.3rem;
+  /* font-size: clamp(1rem, 2.5vw, 1.30rem); */
+  font-weight: 400;
+  line-height: 3rem;
+  letter-spacing: 0.025rem;
+}
+
+.achivements_count {
+  display: flex;
+  justify-content: center;
+}
+
+.achievement__count--title {
+  color: #fff;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 4.8rem;
+  /* font-size: clamp(1.90rem, 2.5vw, 4.8rem); */
+  font-weight: 800;
+  line-height: 4rem;
+  font-weight: bold;
+}
+
+.achivements_count {
+  width: 100%;
+}
+
+.achievement__count--subtitle {
+  color: #fff;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  /* font-size: 1.2rem; */
+  font-size: clamp(0.9rem, 2.5vw, 1.2rem);
+  font-weight: 400;
+  line-height: 2rem;
+  letter-spacing: 0.00338rem;
+}
+
+.achivements__count--1,
+.achivements__count--2,
+.achivements__count--3 {
+  border-right: 1px solid white;
+  flex: 1;
+  text-align: center;
+  padding: 1rem;
+}
+
+.achivements__count--3 {
+  border: 0;
+}
+
+/* TESTIMONIALS SECTIONS */
+.testimonials__section {
+  background: var(--powder-blue);
+  padding: 6rem;
+}
+
+.testimonials__title--box {
+  color: var(--grey);
+  text-align: center;
+  font-family: "Playfair Display", serif;
+  /* font-size: 3rem; */
+  font-size: clamp(1.5rem, 2.5vw, 3rem);
+  font-weight: 700;
+  line-height: 6rem;
+  letter-spacing: 0.05rem;
+}
+
+.testimonials__cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.testimonials__card--box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  width: 50rem;
+  border-radius: 1rem;
+  text-align: center;
+  padding: 3rem;
+  margin-top: 6rem;
+  height: 22rem;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.223));
+}
+
+.testimonials__card--heading {
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  /* font-size: 1.8rem; */
+  font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+  font-weight: 500;
+  line-height: 2rem;
+}
+
+.testimonials__card--body {
+  color: var(--grey);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  /* font-size: 1.4rem; */
+  font-size: clamp(1.2rem, 2.5vw, 1.4rem);
+  font-weight: 400;
+  line-height: 2.2rem;
+  letter-spacing: 0.025rem;
+  margin-top: 1rem;
+}
+
+.testimonials__card--client {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.2rem;
+}
+
+.client-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1rem;
+}
+
+.testimonials__card--name {
+  color: var(--grey);
+  font-family: "Inter", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.8rem;
+}
+
+.testimonials__card--designation {
+  color: var(--grey);
+  font-family: "Inter", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+
+.triangle {
+  width: 3rem;
+  height: 3rem;
+  background: #fff;
+  position: relative;
+  clip-path: polygon(50% 50%, 100% 50%, 50% 100%, 0 50%);
+  bottom: 9rem;
+  left: 25rem;
+  z-index: 99;
+}
+
+.contact__section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 30rem;
+}
+
+.contact-us__container {
+  width: 60%;
+}
+
+.contact__heading {
+  color: var(--grey);
+  font-family: "Playfair Display", serif;
+  font-size: 4.8rem;
+  /* font-size: clamp(2rem, 2.5vw, 4.8rem); */
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4rem;
+  letter-spacing: 0.025rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+}
+
+.contact__btn--icon {
+  margin-right: 1rem;
+  width: 2rem;
+}
+
+.contact__description {
+  color: var(--dark-grey);
+  font-family: "Poppins", sans-serif;
+  /* font-size: 1.5rem; */
+  font-size: clamp(1.2rem, 2.5vw, 2.4rem);
+  font-weight: 400;
+  line-height: 3.6rem;
+  letter-spacing: 0.035rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact__image--section {
+  border-radius: 0rem 0rem 0rem 2.5rem;
+  overflow: hidden;
+  width: 23rem;
+  height: 20rem;
+}
+
+.contact-image {
+  width: 100%;
+  height: 100%;
+}
+
+.footer__section {
+  background: var(--dark-blue);
+  display: flex;
+  justify-content: space-around;
+  height: 32rem;
+}
+
+.footer__logo--container {
+  height: 10rem;
+  display: flex;
+  align-items: center;
+}
+
+.footer__section--logo {
+  max-width: 12rem;
+}
+
+.footer__links--container {
+  display: flex;
+  gap: 5rem;
+  align-items: center;
+  max-height: max-content;
+}
+
+.footer__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.footer__links {
+  text-decoration: none;
+  color: var(--footer-text);
+  font-family: "Inter", sans-serif;
+  /* font-size: 1.6rem; */
+  font-size: clamp(1rem, 2.5vw, 1.6rem);
+  font-weight: 400;
+  line-height: 1.625rem;
+}
+
+.footer__link--header {
+  color: var(--footer-text);
+  font-family: "Inter", sans-serif;
+  /* font-size: 2rem; */
+  font-size: clamp(1.2rem, 2.5vw, 2rem);
+  font-weight: 500;
+  line-height: 1.875rem;
+  margin-bottom: 2rem;
+}
+
+.footer__section-2 {
+  background: #004d7b;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 4rem;
+  gap: 10rem;
+}
+.social__list {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+.copyright {
+  color: var(--footer-text);
+  font-family: "Inter", sans-serif;
+  /* font-size: 1rem; */
+  font-size: clamp(0.9rem, 2.5vw, 1.4rem);
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+/* 320px to 639px */
+@media only screen ,(min-width: 20em) and (max-width:20em) {
+  header {
+    width: 100%;
+  }
+
+  .header__logo {
+    height: 100%;
+    width: 27%;
+  }
+
+  .nav_bar {
+    justify-content: space-evenly;
+  }
+
+  .nav_list {
+    padding: 1.3rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .nav__links {
+    /* font-size: 0.698rem; */
+    letter-spacing: 0.112rem;
+  }
+
+  .search__icon {
+    width: 1.5rem;
+  }
+
+  .hero__section {
+    margin-bottom: 5rem;
+  }
+
+  .hero__title {
+    top: 0rem;
+    left: 0;
+    width: 30rem;
+    height: 50rem;
+    margin-left: 0.7rem;
+  }
+
+  .capsule__long {
+    padding: 0.2rem;
+    margin-left: 0rem;
+  }
+
+  .capsule__new {
+    font-size: 1rem;
+  }
+
+  .capsule__text {
+    font-size: 0.9rem;
+  }
+
+  .hero__heading {
+    font-size: 3.5rem;
+    line-height: 4.8rem;
+    margin-top: 3rem;
+  }
+
+  .hero__description {
+    font-size: 1.12rem;
+    line-height: 2.012em;
+  }
+
+  .btn {
+    padding: 1.9rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .hero__description--two {
+    font-size: 1.2rem;
+    line-height: 3.1rem;
+    margin-top: 5rem;
+  }
+
+  .hero__image--container {
+    display: none;
+  }
+
+  .hero__companies img {
+    width: 6rem;
+  }
+
+  .why__section {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .why__question {
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .why_description {
+    font-size: 1.7rem;
+  }
+
+  .why__cards {
+    gap: 2rem;
+  }
+
+  .why__card {
+    width: 14rem;
+    padding: 1rem;
+  }
+
+  .why__card img {
+    width: 2.2rem;
+  }
+
+  .achivements_count {
+    width: 100%;
+    margin-left: auto;
+  }
+  .achievement__title {
+    font-size: 3rem;
+  }
+  .achievement__count--title {
+    font-size: 3rem;
+  }
+  .achievement__count--subtitle {
+    line-height: 2rem;
+    font-size: 1rem;
+  }
+  .testimonials__section {
+    padding: 2rem;
+  }
+
+  .testimonials__cards {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
+
+  .testimonials__card--box {
+    width: 100%;
+    padding: 1rem;
+    margin-top: 3rem;
+  }
+
+  .triangle {
+    left: 14rem;
+  }
+  .contact__image--section {
+    display: none;
+  }
+  .contact__heading {
+    font-size: 2.8rem;
+  }
+  .contact__description {
+    font-size: clamp(1.2rem, 2.5vw, 2.4rem);
+    line-height: 2.6rem;
+  }
+  .contact-us__container {
+    width: 100%;
+    padding: 1rem;
+  }
+  .footer__section {
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .footer__links--container {
+    justify-content: center;
+  }
+  .footer__section-2 {
+    gap: 0;
+  }
+  .social__images {
+    width: 2rem;
+  }
+}
+/* 640px to 767px */
+@media only screen and (min-width: 40em) {
+  .header__logo {
+    width: 10rem;
+  }
+  .why__section {
+    flex-direction: row;
+    padding: 2rem;
+  }
+  .why__question {
+    text-align: left;
+  }
+  .why__card {
+    width: 20rem;
+    padding: 1rem;
+  }
+  .hero__title {
+    top: 5rem;
+    left: 4rem;
+  }
+  .hero__image--container {
+    display: block;
+    height: 50rem;
+    right: 7rem;
+  }
+  .hero__heading {
+    font-size: 3.5rem;
+    font-weight: 700;
+  }
+  .hero__image {
+    width: 36rem;
+    bottom: 83rem;
+    left: 7rem;
+  }
+  .circle--1 {
+    width: 40rem;
+    height: 40rem;
+  }
+  .circle--2 {
+    bottom: 40rem;
+    left: 2rem;
+    height: 35rem;
+    width: 35rem;
+  }
+  .hero__name-card {
+    width: 25rem;
+    height: 8rem;
+    bottom: 88rem;
+    left: 15rem;
+  }
+  .hero__image--name {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .hero__image--designation {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .testimonials__card--box {
+    width: 50rem;
+  }
+  .triangle {
+    left: 24rem;
+  }
+  .achievement__title {
+    font-size: 4.5rem;
+  }
+  .achievement__subtitle {
+    line-height: 5rem;
+    font-size: 1.8rem;
+  }
+  .achievement__count--title {
+    font-size: 3.8rem;
+  }
+  .achievement__count--subtitle {
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+  .contact-us__container {
+    width: 50%;
+  }
+  .contact__heading {
+    font-size: 2.5rem;
+  }
+  .contact__description {
+    font-size: 1.5rem;
+  }
+  .contact__image--section {
+    display: block;
+  }
+  .footer__link--header {
+    font-size: 1.5rem;
+  }
+  .footer__links {
+    font-size: 1rem;
+  }
+  .footer__section {
+    flex-direction: row;
+    padding: 1rem;
+  }
+  .copyright {
+    font-size: 1rem;
+  }
+}
+/* 768px to above */
+@media only screen and (min-width: 48em) {
+  .nav_list {
+    gap: 6rem;
+  }
+  header {
+    width: 100%;
+  }
+  .header__logo {
+    width: 10rem;
+  }
+  .hero__title {
+    top: 4rem;
+    left: 6rem;
+  }
+  .hero__heading {
+    font-size: 3.5rem;
+  }
+  .hero__image--container {
+    display: block;
+    height: 50rem;
+    right: 2rem;
+  }
+  .hero__image {
+    width: 32rem;
+    bottom: 81rem;
+    left: 7rem;
+  }
+  .circle--1 {
+    width: 45rem;
+    height: 45rem;
+  }
+  .circle--2 {
+    bottom: 44.9rem;
+    left: 4rem;
+    height: 35rem;
+    width: 35rem;
+  }
+  .hero__name-card {
+    width: 20rem;
+    height: 7rem;
+    bottom: 87rem;
+    left: 14rem;
+  }
+  .hero__image--name {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .hero__image--designation {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .why__section {
+    gap: 2rem;
+  }
+  .why__question {
+    width: 30rem;
+  }
+  .why__card {
+    padding: 1.5rem;
+    width: 18rem;
+  }
+  .why__heading {
+    font-size: 3.3rem;
+  }
+  .why_description {
+    font-size: clamp(1.45rem, 2.5vw, 1.5rem);
+  }
+  .achievement__title {
+    font-size: 4rem;
+  }
+  .achievement__subtitle {
+    font-size: 1.8rem;
+  }
+  .achievement__count--title {
+    font-size: 3.8rem;
+  }
+  .achievement__count--subtitle {
+    font-size: 1.8rem;
+  }
+
+  .contact-us__container {
+    width: 50%;
+  }
+  .contact__heading {
+    font-size: 2.8rem;
+  }
+  .contact__description {
+    font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+  }
+  .testimonials__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .triangle {
+    left: 1rem;
+  }
+  .testimonials__section {
+    padding: 1rem;
+  }
+  .testimonials__cards {
+    flex-direction: row;
+    gap: 3rem;
+  }
+
+  .testimonials__card--box {
+    width: 35rem;
+  }
+  .footer__section {
+    flex-direction: row;
+  }
+  .footer__links--container {
+    justify-content: left;
+  }
+  .contact__image--section {
+    display: block;
+  }
+}
+@media only screen and (min-width: 64em) {
+  .hero__heading {
+    font-size: 5.5rem;
+    line-height: 7rem;
+    margin-top: 3rem;
+  }
+  .hero__title {
+    top: 0rem;
+    left: 6rem;
+    width: 50%;
+  }
+  .hero__image--container {
+    right: 7rem;
+  }
+  .hero__description {
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 3.8rem;
+  }
+  .hero__description--two {
+    font-weight: 400;
+    font-size: 1.6rem;
+    margin-top: 3rem;
+  }
+  .btn {
+    font-size: 1.4rem;
+  }
+  .contact__heading {
+    font-size: 4rem;
+    /* font-size: clamp(2rem, 2.5vw, 4.8rem); */
+  }
+  .contact-us__container {
+    width: 60%;
+  }
+  .contact__description {
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+  }
+  .contact__image--section {
+    display: block;
+  }
+  .achivements_count {
+    width: 90%;
+    margin: 0;
+  }
+  .testimonials__card--box {
+    width: 45rem;
+  }
+  .achievement__title {
+    font-size: 4.8rem;
+  }
+  .achievement__count--title {
+    font-size: 4.8rem;
+  }
+  .why__section {
+    gap: 10rem;
+  }
+  .why__question {
+    width: 30rem;
+  }
+  .why__card {
+    width: 22rem;
+  }
+
+  .contact__description {
+    line-height: 3.6rem;
+  }
+  .footer__link--header {
+    font-size: clamp(1.2rem, 2.5vw, 2rem);
+  }
+  .footer__links {
+    font-size: clamp(1rem, 2.5vw, 1.6rem);
+  }
+  .copyright {
+    font-size: clamp(0.9rem, 2.5vw, 1.4rem);
+  }
+}
+@media only screen and (min-width: 80em) {
+  .achivements_count {
+    width: 70%;
+    margin: 0;
+  }
+  .achievement__subtitle {
+    line-height: 5rem;
+  }
+
+  .hero__title {
+    top: 4rem;
+    left: 13rem;
+    width: 80rem;
+    height: 100%;
+  }
+
+  .capsule__new {
+    font-size: 1.2rem;
+  }
+
+  .capsule__text {
+    font-size: 1.2rem;
+    line-height: 2rem;
+    padding: 0.2rem 1rem;
+  }
+
+  .hero__heading {
+    font-size: 8rem;
+    line-height: 10.8rem;
+  }
+
+  .hero__description {
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 3.8rem;
+    margin: 3rem 0;
+  }
+
+  .btn {
+    padding: 2.5rem 3.5rem;
+    font-size: 1.6rem;
+
+  }
+
+  .hero__description--two {
+    font-size: 2.2rem;
+    margin-top: 8rem;
+  }
+
+  .hero__image--container {
+    height: 70rem;
+    width: 65rem;
+    right: 5rem;
+  }
+
+  .hero__image {
+    width: 45.5rem;
+    bottom: 110rem;
+    left: 10rem;
+  }
+
+  .hero__name-card {
+    width: 29rem;
+    height: 10rem;
+    bottom: 118rem;
+    left: 20rem;
+  }
+
+  .hero__image--name {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 3.6rem;
+  }
+
+  .hero__image--designation {
+    line-height: 3.6rem;
+    font-size: 1.6rem;
+  }
+
+  .circle--1 {
+    width: 60rem;
+    height: 60rem;
+  }
+
+  .circle--2 {
+    bottom: 60rem;
+    left: 7rem;
+    height: 45rem;
+    width: 45rem;
+  }
+  .why__question {
+    width: 25%;
+  }
+  .why__heading {
+    font-size: clamp(1.8rem, 2.5vw, 4.8rem);
+  }
+  .why_description {
+    font-size: clamp(1.45rem, 2.5vw, 2rem);
+  }
+  .testimonials__title--box {
+    font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+    padding: 2rem;
+  }
+  .testimonials__card--box {
+    width: 50rem;
+    padding: 1.5rem;
+  }
+  .contact__heading {
+    font-size: 4.8rem;
+    line-height: 7rem;
+  }
+  .contact__description {
+    font-size: clamp(1.2rem, 2.5vw, 2.4rem);
+  }
+}
+@media only screen and (min-width: 83.563em) {
+  .hero__heading {
+    font-size: 9rem;
+    line-height: 10.8rem;
+  }
+  .hero__image {
+    width: 45rem;
+    bottom: 109rem;
+    left: 12rem;
+  }
+  .hero__name-card {
+    bottom: 117rem;
+    left: 22rem;
+  }
+}
